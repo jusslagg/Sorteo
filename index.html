@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo Cruz Roja Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/CR-LOGO-VERTICAL letras negras (4).png" alt="Cruz Roja Argentina Logo" id="logo">
+            <h1>Sorteo Cruz Roja Argentina</h1>
+        </header>
+        <form id="sorteo-form">
+            <label for="personas">Introduce el listado de personas (cada una en una nueva línea, separadas por coma o espacios):</label>
+            <textarea id="personas" rows="6" placeholder="Juan Pérez\nMaría López\n..."></textarea>
+            
+            <label for="cantidad">Número de ganadores:</label>
+            <input type="number" id="cantidad" min="1" placeholder="Número de ganadores">
+
+            <button type="submit">Realizar Sorteo</button>
+        </form>
+
+        <div id="resultados">
+            <h2>Ganadores</h2>
+            <ul id="lista-ganadores"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
